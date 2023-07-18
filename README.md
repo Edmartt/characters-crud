@@ -39,7 +39,7 @@ Project structure:
 
 And this is a prototype of the requests flow using the authentication service
 
-![]()
+![](https://github.com/Edmartt/characters-crud/blob/dev/assets/concept.png)
 
 ## Requirements
 
