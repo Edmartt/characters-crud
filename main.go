@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/edmartt/http_test/internal/api/server"
-	"github.com/edmartt/http_test/internal/database"
+	"github.com/edmartt/characters-crud/internal/api/server"
+	"github.com/edmartt/characters-crud/internal/database"
 
 	"github.com/joho/godotenv"
 )
