@@ -1,8 +1,8 @@
 package server
 
 import (
-	routers "github.com/edmartt/http_test/internal/api/characters/routes"
-	"github.com/edmartt/http_test/internal/api/server/ping"
+	routers "github.com/edmartt/characters-crud/internal/api/characters/routes"
+	"github.com/edmartt/characters-crud/internal/api/server/ping"
 	"github.com/gin-gonic/gin"
 )
 

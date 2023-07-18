@@ -3,8 +3,8 @@ package data
 import (
 	"log"
 
-	"github.com/edmartt/http_test/internal/api/characters/models"
-	"github.com/edmartt/http_test/internal/database"
+	"github.com/edmartt/characters-crud/internal/api/characters/models"
+	"github.com/edmartt/characters-crud/internal/database"
 )
 
 var dbConnectionObject database.SQLDB

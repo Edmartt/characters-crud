@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/edmartt/http_test/internal/api/characters/handlers"
+	"github.com/edmartt/characters-crud/internal/api/characters/handlers"
 	"github.com/gin-gonic/gin"
 )
 

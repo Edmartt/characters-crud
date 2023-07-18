@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/edmartt/http_test/internal/api/characters/data"
-	"github.com/edmartt/http_test/internal/api/characters/models"
-	"github.com/edmartt/http_test/internal/api/characters/responses"
+	"github.com/edmartt/characters-crud/internal/api/characters/data"
+	"github.com/edmartt/characters-crud/internal/api/characters/models"
+	"github.com/edmartt/characters-crud/internal/api/characters/responses"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 )

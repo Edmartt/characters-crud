@@ -1,6 +1,6 @@
 package responses
 
-import "github.com/edmartt/http_test/internal/api/characters/models"
+import "github.com/edmartt/characters-crud/internal/api/characters/models"
 
 type HttpOKArray struct {
 	Response *[]models.Character `json:"response"`

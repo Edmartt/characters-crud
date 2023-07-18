@@ -3,7 +3,7 @@ package database
 import (
 	"log"
 
-	"github.com/edmartt/http_test/internal/api/characters/models"
+	"github.com/edmartt/characters-crud/internal/api/characters/models"
 )
 
 type Migrations struct {
