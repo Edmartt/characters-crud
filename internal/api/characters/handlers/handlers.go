@@ -11,13 +11,13 @@ import (
 	"github.com/google/uuid"
 )
 
+var dataAccess data.CharacterDataAccessInterface
+
 type CharactersHandler struct {
 }
 
-var dataAccess data.CharacterDataAccessInterface
-
 func init() {
-	dataAccess = data.CharacterDataAccessImplementation{}
+	data.DataAccess = data.CharacterDataAccessImplementation{}
 }
 
 func (c CharactersHandler) PostCharacter(context *gin.Context) {
@@ -37,7 +37,7 @@ func (c CharactersHandler) PostCharacter(context *gin.Context) {
 		return
 	}
 
-	accessOBject, err := dataAccess.CreateCharacter(modelObject)
+	accessOBject, err := data.DataAccess.CreateCharacter(modelObject)
 
 	if err != nil {
 		log.Println("ERROR: ", err.Error())
@@ -56,7 +56,7 @@ func (c CharactersHandler) GetCharacter(context *gin.Context) {
 
 	id := context.Param("id")
 
-	accessObject, err := dataAccess.GetCharacter(id)
+	accessObject, err := data.DataAccess.GetCharacter(id)
 
 	if err != nil {
 		log.Println("DATA ERROR", err.Error())
@@ -73,7 +73,7 @@ func (c CharactersHandler) GetCharacter(context *gin.Context) {
 
 func (c CharactersHandler) GetCharacters(context *gin.Context) {
 
-	existantCharacters, err := dataAccess.GetCharacters()
+	existantCharacters, err := data.DataAccess.GetCharacters()
 
 	if err != nil {
 		log.Println("ERROR: ", err.Error())
